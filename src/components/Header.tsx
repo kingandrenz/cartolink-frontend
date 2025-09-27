@@ -1,21 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import {
-   BiSupport, 
-   IoIosArrowDown,
-    IoSunny,
-    FaBell,
-    MdHome,
-    BsCardImage,
-    IoVideocam,
-    FaWandMagicSparkles,
-    FaPaintBrush,
-    SiOpenjdk,
-    FaFolder,
-    RiImage2Fill
-    } from "./Icons"
+
 import useTheme from "@/hooks/useTheme";
+import { IoIosArrowDown } from "react-icons/io";
+import { MdHome } from "react-icons/md";
+import { BsCardImage } from "react-icons/bs";
+import { IoSunny, IoSunnyOutline, IoVideocam } from "react-icons/io5";
+import { FaPaintbrush, FaWandMagicSparkles } from "react-icons/fa6";
+import { SiOpenjdk } from "react-icons/si";
+import { FaBell, FaFolder } from "react-icons/fa";
+import { RiImage2Fill } from "react-icons/ri";
+import { BiSupport } from "react-icons/bi";
 
 function Header() {
   const [theme, setTheme] = useTheme();
@@ -45,7 +41,7 @@ function Header() {
         <BsCardImage className="w-5 h-5 cursor-pointer hover:text-gray-600 dark:hover:text-gray-300" />
         <IoVideocam className="w-5 h-5 cursor-pointer hover:text-gray-600 dark:hover:text-gray-300" />
         <FaWandMagicSparkles className="w-5 h-5 cursor-pointer hover:text-gray-600 dark:hover:text-gray-300" />
-        <FaPaintBrush className="w-5 h-5 cursor-pointer hover:text-gray-600 dark:hover:text-gray-300" />
+        <FaPaintbrush className="w-5 h-5 cursor-pointer hover:text-gray-600 dark:hover:text-gray-300" />
         <SiOpenjdk className="w-5 h-5 cursor-pointer hover:text-gray-600 dark:hover:text-gray-300" />
         <FaFolder className="w-5 h-5 cursor-pointer hover:text-gray-600 dark:hover:text-gray-300" />
       </div>

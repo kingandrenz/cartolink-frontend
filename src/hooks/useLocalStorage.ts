@@ -2,24 +2,18 @@
 
 import { useState, useEffect } from "react";
 
-const useLocalStorage = <T,>(
-  key: string,
-  defaultValue: T
-): [T, React.Dispatch<React.SetStateAction<T>>] => {
-  const [value, setValue] = useState<T>(defaultValue);
-
-  // ✅ Load saved value after first mount
-  useEffect(() => {
-    if (typeof window === "undefined") return; // SSR guard
+export default function useLocalStorage<T>(key: string, defaultValue: T): [T, React.Dispatch<React.SetStateAction<T>>] {
+  // ✅ Initialize with lazy function to avoid hydration issues
+  const [value, setValue] = useState<T>(() => {
+    if (typeof window === "undefined") return defaultValue;
     try {
       const stored = window.localStorage.getItem(key);
-      if (stored) {
-        setValue(JSON.parse(stored));
-      }
+      return stored ? JSON.parse(stored) : defaultValue;
     } catch (err) {
       console.warn(`Error reading localStorage key "${key}":`, err);
+      return defaultValue;
     }
-  }, [key]);
+  });
 
   // ✅ Save value whenever it changes
   useEffect(() => {
@@ -32,6 +26,4 @@ const useLocalStorage = <T,>(
   }, [key, value]);
 
   return [value, setValue];
-};
-
-export default useLocalStorage;
+}
