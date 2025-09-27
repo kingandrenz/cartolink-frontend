@@ -19,11 +19,13 @@ export default function Home() {
     <div className="min-h-screen pt-[5rem] pb-[4rem] transition-colors duration-300">
       <Header />
 
+      {/* Carousel + Slider Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-10 px-5 py-4 mt-10">
         <ImageCorousel data={courouselData} interval={CAROUSEL_INTERVAL} />
         <ImageSlider data={sliderData} />
       </section>
 
+      {/* Generate Section */}
       <section className="p-6">
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-lg font-semibold">Generate</h3>
@@ -42,7 +44,16 @@ export default function Home() {
             )}
           </button>
         </div>
-        <Generate showAll={showAll} />
+
+        {/* Expand/Collapse Container */}
+        <div
+          className={`transition-all duration-500 ease-in-out overflow-hidden`}
+          style={{
+            maxHeight: showAll ? "2000px" : "500px", // Adjust maxHeight as needed
+          }}
+        >
+          <Generate showAll={showAll} />
+        </div>
       </section>
 
       <FooterLinks />

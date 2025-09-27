@@ -31,8 +31,8 @@ export default function Footer() {
             <Image
               src="/icons/mobbin.png"
               alt="Mobbin Logo"
-              width={48}
-              height={48}
+              width={88}
+              height={88}
               className="object-contain"
             />
           </div>
