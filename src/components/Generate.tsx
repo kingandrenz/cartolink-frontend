@@ -78,7 +78,7 @@ const Generate: React.FC<GenerateProps> = ({ showAll }) => {
                     size={28}
                     className="bg-gradient-to-b from-gray-900 to-gray-700 text-white"
                   />
-                ) : item.id === 8 ? ( // ✅ changed this to 8
+                ) : item.id === 8 ? (
                   <GiMagicSwirl
                     size={28}
                     className="rounded-full bg-gradient-to-b from-purple-500 to-pink-500 text-blue-500"

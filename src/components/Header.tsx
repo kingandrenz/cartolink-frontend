@@ -27,10 +27,10 @@ function Header() {
   const isDark = theme === "dark";
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 flex justify-between items-center p-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-white shadow transition-colors border-0 outline-none">
+    <header className="fixed top-0 left-0 w-full z-50 flex justify-between items-center p-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-white  transition-colors border-0 outline-none">
       {/* Left Section */}
       <div className="flex items-center gap-x-2">
-        <Image src="/k-t.png" alt="K logo" width={64} height={64} />
+        <Image src="/k-whitenew.png" alt="K logo" width={64} height={64}  className="bg-black"/>
         <div className="flex items-center gap-x-0.5">
           <Image
             src="/blur_1.png"
