@@ -1,7 +1,13 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { generateItems } from "@/util/data";
+import { 
+  BsCardImage, IoVideocam,
+  FaPaintBrush, FaWandMagic,
+  SiOpenjdk, GiMicrophone,
+  BsPersonArmsUp, GiMagicSwirl
+  } from "./Icons";
 
 interface GenerateProps {
   showAll: boolean;
@@ -28,13 +34,58 @@ const Generate: React.FC<GenerateProps> = ({ showAll }) => {
                 minHeight: "3rem",
               }}
             >
-              <Image
+              {/* <Image
                 src={item.genImage}
                 alt={item.label}
                 width={28}
                 height={28}
                 className="object-contain"
-              />
+              /> */}
+
+              {
+                item.id === 1 ? (
+                  <BsCardImage
+                    size={28}
+                    className="bg-gradient-to-b from-gray-600 to-gray-100 text-white"
+                  />
+                ) : item.id === 2 ? (
+                  <IoVideocam
+                    size={28}
+                    className="bg-yellow-500 text-white"
+                  />
+                ) : item.id === 3 ? (
+                  <FaPaintBrush
+                    size={28}
+                    className="bg-gradient-to-b from-sky-400 to-blue-200 text-white"
+                  />
+                ) : item.id === 4 ? (
+                  <FaWandMagic
+                    size={28}
+                    className="bg-gradient-to-b from-gray-800 to-transparent text-white"
+                  />
+                ) : item.id === 5 ? (
+                  <SiOpenjdk
+                    size={28}
+                    className="bg-gradient-to-b from-purple-700 to-purple-100 text-white"
+                  />
+                ) : item.id === 6 ? (
+                  <GiMicrophone
+                    size={28}
+                    className="bg-gradient-to-b from-green-800 to-green-300 text-white"
+                  />
+                ) : item.id === 7 ? (
+                  <BsPersonArmsUp
+                    size={28}
+                    className="bg-gradient-to-b from-gray-900 to-gray-700 text-white"
+                  />
+                ) : item.id === 8 ? ( // ✅ changed this to 8
+                  <GiMagicSwirl
+                    size={28}
+                    className="rounded-full bg-gradient-to-b from-purple-500 to-pink-500 text-blue-500"
+                  />
+                ) : null
+              }
+
             </div>
 
             <div className="flex flex-col">

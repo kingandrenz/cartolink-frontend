@@ -3,15 +3,24 @@
 import Image from "next/image";
 
 import useTheme from "@/hooks/useTheme";
-import { IoIosArrowDown } from "react-icons/io";
-import { MdHome } from "react-icons/md";
-import { BsCardImage } from "react-icons/bs";
-import { IoSunny, IoSunnyOutline, IoVideocam } from "react-icons/io5";
-import { FaPaintbrush, FaWandMagicSparkles } from "react-icons/fa6";
-import { SiOpenjdk } from "react-icons/si";
-import { FaBell, FaFolder } from "react-icons/fa";
-import { RiImage2Fill } from "react-icons/ri";
-import { BiSupport } from "react-icons/bi";
+
+
+import {
+  IoIosArrowDown,
+  MdHome,
+  BsCardImage,
+  IoMoon,
+  IoSunnyOutline,
+  IoVideocam,
+  // FaPaintBrush,
+  FaWandMagicSparkles,
+  SiOpenjdk,
+  FaBell,
+  FaFolder,
+  RiImage2Fill,
+  BiSupport,
+  FaPaintbrush
+} from "./Icons";
 
 function Header() {
   const [theme, setTheme] = useTheme();
@@ -57,10 +66,15 @@ function Header() {
           <span className="text-sm">Support</span>
         </div>
         <FaBell className="w-5 h-5 cursor-pointer hover:text-gray-600 dark:hover:text-gray-300" />
-        <IoSunny
+        {
+          isDark ? (<IoMoon
           className="w-5 h-5 cursor-pointer hover:text-gray-600 dark:hover:text-gray-300"
           onClick={() => setTheme(isDark ? "light" : "dark")}
-        />
+        />) : (<IoSunnyOutline
+          className="w-5 h-5 cursor-pointer hover:text-gray-600 dark:hover:text-gray-300"
+          onClick={() => setTheme(isDark ? "light" : "dark")}
+        /> )
+        }
         <div className="w-8 h-8 overflow-hidden rounded-full cursor-pointer">
           <Image
             src="/crystal.jpg"
