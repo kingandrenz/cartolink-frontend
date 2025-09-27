@@ -42,7 +42,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ data }) => {
               height={400}
               layout="fill"
               className="object-cover"
-              // priority
+              priority
             />
           </div>
         ))}

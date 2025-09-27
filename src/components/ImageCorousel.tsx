@@ -42,8 +42,8 @@ const ImageCorousel: React.FC<ImageCorouselProps> = ({ data, interval = 3000 }) 
                 alt={`slide ${index + 1}`}
                 width={600}
                 height={400}
-                // layout="fill"
-                // priority
+                layout="fill"
+                priority
                 className="object-cover rounded-xl "
               />
             </div>
