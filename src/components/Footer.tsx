@@ -7,7 +7,7 @@ export default function Footer() {
   console.log("Footer: ", theme);
 
   return (
-    <footer className="fixed bottom-0 left-0 w-full z-50 bg-gray-800 text-white dark:bg-gray-300 dark:text-gray-800 p-4 h-[3rem] transition-colors duration-300">
+    <footer className="fixed bottom-0 left-0 w-full z-50 bg-gray-800 text-white dark:bg-gray-300 dark:text-gray-800 p-4 h-[3rem] transition-colors duration-300 mt-0">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Left Section */}
         <div className="text-sm font-medium flex items-center gap-x-3">
@@ -25,14 +25,14 @@ export default function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center gap-2 text-sm">
+        <div className="flex items-center justify-center gap-2 text-sm">
           <span>Curated by</span>
           <div className="h-8 w-8">
             <Image
               src="/icons/mobbin_footer.svg"
               alt="Mobbin Logo"
-              width={20}
-              height={20}
+              width={40}
+              height={40}
               className="object-contain"
             />
           </div>

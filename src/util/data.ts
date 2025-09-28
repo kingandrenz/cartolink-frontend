@@ -31,7 +31,7 @@ export const courouselData: CarouselItem[] = [
     { id: 1, image: "/krea/krea5.jpg" }, { id: 2, image: "/krea/krea_2.png" }, 
     { id: 3, image: "/krea/krea.jpg" }, { id: 4, image: "/krea/krea2.jpg" }, 
     { id: 5, image: "/krea/krea3.jpg" }, { id: 6, image: "/krea/krea4.jpg" }, 
-    { id: 7, image: "/krea/krea6.jpg" }, 
+    { id: 7, image: "/krea/krea_AI.png" }, { id: 8, image: "/krea/Flux_KreaAI.png" }, 
   ];
 
 export interface GenerateItem {

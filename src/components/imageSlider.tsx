@@ -48,7 +48,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ data }) => {
         ))}
       </div>
 
-      {/* Buttons below image */}
+      {/* Buttons: Left and Right */}
       <div className="flex justify-center gap-4 mt-3">
         <button
           onClick={handlePrevious}
