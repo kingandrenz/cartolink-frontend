@@ -2,7 +2,7 @@ import { PiNotebookFill, IoCard } from "./Icons";
 
 export default function FooterLinks() {
   return (
-    <div className="w-full h-16 flex items-center justify-between px-6 mb-1.5">
+    <div className="w-full h-16 flex items-center justify-between px-6 mb-0.5">
       {/* Gallery Section */}
       <div className="px-6 py-4">
         <h2 className="text-base font-semibold text-gray-900 dark:text-white">
