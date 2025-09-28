@@ -25,14 +25,14 @@ export default function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center justify-center gap-2 text-sm">
+        <div className="flex items-center gap-2 text-sm">
           <span>Curated by</span>
-          <div className="h-8 w-8">
+          <div className="h-6 w-6 flex items-center justify-center">
             <Image
               src="/icons/mobbin_footer.svg"
               alt="Mobbin Logo"
-              width={40}
-              height={40}
+              width={20}
+              height={20}
               className="object-contain"
             />
           </div>
