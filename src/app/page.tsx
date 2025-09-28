@@ -49,7 +49,7 @@ export default function Home() {
         <div
           className={`transition-all duration-500 ease-in-out overflow-hidden`}
           style={{
-            maxHeight: showAll ? "2000px" : "500px", // Adjust maxHeight as needed
+            maxHeight: showAll ? "2000px" : "500px", 
           }}
         >
           <Generate showAll={showAll} />
