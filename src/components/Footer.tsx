@@ -13,8 +13,8 @@ export default function Footer() {
         <div className="text-sm font-medium flex items-center gap-x-3">
           <div className="flex items-center gap-x-2">
             <div className="h-10 w-10 flex items-center justify-center">
-              <Image 
-                src="/krea-ai.jpeg" 
+              <Image
+                src="/krea-ai.jpeg"
                 alt="krea logo"
                 width={20}
                 height={20}
@@ -26,15 +26,15 @@ export default function Footer() {
 
         {/* Right Section */}
         <div className="flex items-center gap-2 text-sm">
-        <span>Curated by</span>
+          <span>Curated by</span>
           <Image
             src="/icons/mobbin_footer.svg"
             alt="Mobbin Logo"
-            width={40}
-            height={40}
+            width={60}
+            height={60}
             className="object-contain"
           />
-      </div>
+        </div>
       </div>
     </footer>
   );
