@@ -52,7 +52,7 @@ const ImageCorousel: React.FC<ImageCorouselProps> = ({ data, interval = 3000 }) 
       </div>
 
       {/* Indicators aligned to the right */}
-      <div className="flex justify-end mt-4 space-x-2 mr-4">
+      <div className="flex justify-end mt-4 space-x-2 mr-6">
         {data?.map((_, index) => (
           <button
             key={index}

@@ -11,6 +11,14 @@ import { RiImage2Fill } from "react-icons/ri";
 import { SiOpenjdk } from "react-icons/si";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { PiNotebookFill } from "react-icons/pi";
+import { FaRobot } from "react-icons/fa";
+import { MdMusicNote } from "react-icons/md";
+import { Md3dRotation } from "react-icons/md";
+import { AiOutlineFileText } from "react-icons/ai";
+import { MdPhotoLibrary } from "react-icons/md";
+import { MdTranslate } from "react-icons/md";
+import { MdAudiotrack } from "react-icons/md";
+import { FaCloudUploadAlt } from "react-icons/fa";
 
 
 
@@ -36,5 +44,13 @@ export {
     IoSunnyOutline,
     FaPaintbrush,
     IoCard,
-    PiNotebookFill
+    PiNotebookFill,
+    FaRobot,
+    MdMusicNote,
+    Md3dRotation,
+    AiOutlineFileText,
+    MdPhotoLibrary,
+    MdTranslate,
+    MdAudiotrack,
+    FaCloudUploadAlt
 };

@@ -29,10 +29,10 @@ export default function Footer() {
           <span>Curated by</span>
           <div className="h-8 w-8">
             <Image
-              src="/icons/mobbin.png"
+              src="/icons/mobbin_footer.svg"
               alt="Mobbin Logo"
-              width={88}
-              height={88}
+              width={20}
+              height={20}
               className="object-contain"
             />
           </div>

@@ -10,7 +10,7 @@ const GenerateCard: React.FC<CardProps> = ({ tool }) => {
   const Icon = tool.icon;
 
   return (
-    <div className="flex items-center justify-between rounded-xl p-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition shadow">
+    <div className="flex items-center justify-between rounded-xl p-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition hover:shadow-md">
       {/* Left Section */}
       <div className="flex items-center gap-3">
         <div
